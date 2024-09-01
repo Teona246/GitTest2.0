@@ -25,6 +25,5 @@ public class Main {
         System.out.println("Умножение: " + product);
         System.out.println("Деление: " + quotient);
         System.out.println("Остаток от деления: " + remainder);
-
     }
 }

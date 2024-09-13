@@ -1,3 +1,6 @@
+import java.util.Random;
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -11,8 +14,12 @@ public class Main {
         boolean myBoolean = true;
 
 
-        int x = 39;
-        int z = 9;
+        Scanner scan = new Scanner (System.in);
+        System.out.println("Введите число: ");
+        int x = scan.nextInt();
+
+        System.out.println("Введите число: ");
+        int z = scan.nextInt();
 
         int sum = x+z;
         int difference = x-z;
@@ -25,5 +32,36 @@ public class Main {
         System.out.println("Умножение: " + product);
         System.out.println("Деление: " + quotient);
         System.out.println("Остаток от деления: " + remainder);
+
+        System.out.println();
+        System.out.println("РАНДОМ");
+
+        Random random = new Random();
+        int firstNum = random.nextInt(0,65535);
+        int secondNum = random.nextInt(0,65535);
+        int thirdNum = random.nextInt(0,65535);
+        int fourthNum = random.nextInt(0,65535);
+
+        char char1 = (char) firstNum;
+        char char2 = (char) secondNum;
+        char char3 = (char) thirdNum;
+        char char4 = (char) fourthNum;
+
+        System.out.println("Символы: " + char1 + char2 + char3 + char4);
+
+        System.out.println();
+        System.out.println("ПЕРЕПОЛНЕНИЕ");
+
+        long mySecondLong = 3_000_000_000L;
+        System.out.println("mySecondLong: " + mySecondLong);
+        int mySecondInt = (int) mySecondLong;
+        System.out.println("mySecondInt: " + mySecondInt);
+
+
+
+
+
+
+
     }
 }

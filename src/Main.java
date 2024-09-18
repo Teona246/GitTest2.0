@@ -90,8 +90,6 @@ public class Main {
                     System.out.println("Кофе не готов");
                 }
         }
-
         }
-
-        }
+    }
 }
